@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <link href="assets/im/favicon.png" rel="icon" />
+    <title>Contact FurEver Health – Get in Touch with Our Veterinary Clinic</title>
+    <meta name="description" content="Have questions or need to schedule an appointment? Contact FurEver Health today. Find our location, hours, phone number, and email to connect with us."/>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html"><img class="logo" src="assets/im/logo_01.png" alt="Furever Health"></a>
+            <ul id="mainMenu" class="mainMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="generalBtn">Book Now</a>
+            <span id="menuBtn" class="material-symbols-outlined mobileMenuButton">menu</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="mainBanner intermediary" style="background-image:url('assets/im/intermediaryImage.jpg')">
+            <div class="mainBannerContent">
+                <h1 class="bigTitle">Get in touch</h1>
+                <p class="subtitle">We’re Here to Support You and Your Pet Every Step of the Way</p>
+                <div class="buttonsList">
+                    <a href="tel:01 234 5678" class="generalBtn"><span class="material-symbols-outlined">call</span>01 234 5678</a>
+                    <a href="mailto:hi@fureverhealth.org" class="generalBtn white"><span class="material-symbols-outlined">mail</span>hi@fureverhealth.org</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="generalSection">
+            <div class="sectionHeader">
+                <h3>Book an Appointment</h3>
+            </div>
+            <form id="bookingForm">
+                <div class="formItem">
+                    <label>Name*</label>
+                    <input type="text" id="input-name" name="name" required>
+                </div>
+                <div class="formItem">
+                    <label>Email*</label>
+                    <input type="email" id="input-email" name="email" required>
+                </div>
+                <div class="formItem">
+                    <label>Phone*</label>
+                    <input type="tel" id="input-phone" name="phone" required>
+                </div>
+                <div class="formItem">
+                    <label>Location*</label>
+                    <input type="text" id="input-location" name="location" required>
+                </div>
+                <div class="formItem">
+                    <label>Pet*</label>
+                    <select>
+                        <option selected disabled>Select an option...</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                    </select>
+                </div>
+                <div class="formItem">
+                    <label>Appointment Date*</label>
+                    <input type="date" id="input-date" name="date" required>
+                </div>
+                <div class="formItem">
+                    <label>Details*</label>
+                    <textarea id="input-details" name="details" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="generalBtn">Book Now</button>
+            </form>
+        </section>
+
+        <section class="generalSection mapSection">
+            <div style="width: 100%; height: 0; padding-bottom: 56.25%; position: relative;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23814.59679755325!2d-6.267493416144097!3d53.34409795976098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9f82aef705%3A0xf231d5a306cc96c!2sDublin%2C%20Ireland!5e0!3m2!1sen!2s!4v1699002489387!5m2!1sen!2s" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0; position: absolute; top: 0; left: 0;"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footerContent">
+            <h4 class="footerTitle">Ready to Give Your Pet the Care They Deserve?</h4>
+            <a href="contact.html" class="generalBtn white">Book an Appointment Today</a>
+        </div>
+        <div class="footerBar">
+            <p>Images provided by <a href="www.freepik.com" target="_blank">Freepik</a></p>
+        </div>
+    </footer>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
